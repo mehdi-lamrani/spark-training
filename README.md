@@ -9,7 +9,10 @@ If you are seeing this, you are confirming your access to the Repo.
 
 - You should be able to access these URLs
 
-EXAMPLE LINKS - DO NOT CLICK ON THE LINKS - USE YOUR SERVER IP
+- CAUTION 1 - EXAMPLE LINKS - DO NOT CLICK ON THE LINKS - USE YOUR SERVER IP
+
+- CAUTION 2 - **USE HTTPS WHEN MARKED** OTHERWHISE IT WONT WORK
+
 
 | HDFS Name Node | http://ec2-18-222-124-25.us-east-2.compute.amazonaws.com:9870/  |   
 |---|---|
