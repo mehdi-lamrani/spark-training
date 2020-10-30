@@ -6,7 +6,7 @@ val dfc = df.groupBy(window($"timestamp", "10 second")).count()
 //OPTION 2 : AVG
 val dfc = df.groupBy(window($"timestamp", "10 second")).avg()
 
-//OPTION 3 : AVG
+//OPTION 3 : SLIDING WINDOW
 val dfc = df.groupBy(window($"timestamp", "10 second", "1 second")).avg()
 
 dfc.writeStream.format("console").option("checkpointLocation", "/user/root/data/check").outputMode("Complete").start()
