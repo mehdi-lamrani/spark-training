@@ -4,6 +4,6 @@ val df = spark.readStream.format("socket").option("host", "127.0.0.1").option("p
 val dfc = df.groupBy(window($"timestamp", "10 second")).count()
 
 //OPTION 2 : AVG
-val dfc = df.groupBy(window($"timestamp", "10 second")).count()
+val dfc = df.groupBy(window($"timestamp", "10 second")).avg()
 
 dfc.writeStream.format("console").option("checkpointLocation", "/user/root/data/check").outputMode("Complete").start()
