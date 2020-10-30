@@ -73,6 +73,10 @@ Change Extra {"queue": "root.default"} to {"queue": "default"} in the Airflow We
 
 (https://stackoverflow.com/questions/60329007/how-to-set-the-yarn-queue-when-submitting-a-spark-application-from-the-airflow-s)
 
+Explanation :  
+The default Queue in YARN is called "default".   
+By default, Airflow Spark Connector puts "user.default" which does not match the existing default queue.  
+
 
 You're all set ! 
 You can proceed to http://YOUR.MAS.TER.IP:8080
