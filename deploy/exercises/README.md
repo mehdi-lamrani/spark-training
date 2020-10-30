@@ -5,6 +5,12 @@ sudo su
 cd
 ```
 
+
+```
+Load the Data (again)
+
+[zipcodes.csv](https://github.com/sylace-hub/spark-m-training/blob/master/shell/exercices/01.load-data.md)
+
 ```
 curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
 sudo yum install sbt -y
