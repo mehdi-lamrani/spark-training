@@ -5,6 +5,8 @@
 
 ![spark stream](/res/img/spark-TCP-stream.png)
 
+![random walk](https://miro.medium.com/max/4000/1*WABRtmAWBd0rmEOsbectRA.png)
+
 - To that effect, the python script [SignalTCPSend.py](SignalTCPSend.py) is provided to you.   
   Take a minute or two to quickly skim through the code.  
   Focus mainly on the usage description
