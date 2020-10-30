@@ -24,3 +24,9 @@ df_stream3 = df_stream1.join(df_stream2,df_stream1.timestamp ==  df_stream2.time
 query3 = df_stream3.writeStream.format("csv").option("path", "/user/root/data/signal_c").option("checkpointLocation", "/user/root/data/check3").start()
 query2 = df_stream2.writeStream.format("csv").option("path", "/user/root/data/signal_2").option("checkpointLocation", "/user/root/data/check2").start()
 query1 = df_stream1.writeStream.format("csv").option("path", "/user/root/data/signal_1").option("checkpointLocation", "/user/root/data/check1").start()
+
+# BEFORE ANY STREAM RESTART
+# CLEAN CHEKPOINT TO START FRESH & AVOID ERROR MSG
+# hdfs dfs -rm -r /user/root/data/check1
+# hdfs dfs -rm -r /user/root/data/check2
+# hdfs dfs -rm -r /user/root/data/check3
