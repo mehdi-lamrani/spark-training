@@ -32,7 +32,7 @@ sbt package
 - submit the jar file
 
 ```
-spark-submit --class classnamehere /chemin/complet/thenameofmyjar.jar
+spark-submit --class classnamehere(without .class extension) /chemin/complet/thenameofmyjar.jar
 ```
 
 - Check that your program ran as expected and produced the desired results
