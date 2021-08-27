@@ -1,6 +1,6 @@
 ###############################################################################
 # This program generates a Random Walk type continuous signal                 #
-# randmonly incrementing or decrementing by 1 at each step                    #
+# randomly incrementing or decrementing by 1 at each step                    #
 # and sends the values one by one to the specified TCP port (default: 9999)   #
 # at the specified frequency per second (default: 1)                          #
 #                                                                             #
